@@ -10,7 +10,7 @@ const channel = process.env.DISCORD_CHANNEL_ID;
 
 client.on('message', async message => {
 	// ...
-	if (message.content.startsWith('floor!')) {
+	if (message.content.startsWith('floor!')||message.content.startsWith('Floor!')) {
 		
 	var openSeaResponse = await fetch(
     "https://api.opensea.io/api/v1/collections?" + new URLSearchParams({
